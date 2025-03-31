@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hex-pattern">
+    <img src="ftoanimada.jpg" alt="Ari y Jessi" class="imagen-izquierda">
+    <div class="login-container" class="audio-player">
+        <img src="mau.jpg">
+        <p><h3>Antes de ingresar escuchen esta canción:</h3></p>
+        <audio id="audio" src="tupuedes.mp3"></audio>
+        <button id="playPauseBtn">▶</button>
+        <input type="range" id="seekBar" value="0" min="0" step="1">
+        <span id="time">0:00</span>
+        <p>Amor propio señoritas, ustedes lo están haciendo bien.💛</p>
+        
+        <h1>Iniciar Sesión</h1>
+        <form id="login-form">
+            <div class="username-container">
+                <input required="" type="text" name="username" class="username-input" id="username">
+                <label class="label">Usuario</label>
+            </div>
+            <input type="password" name="password" class="password-input" id="password" placeholder="Ingresa tu contraseña">
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="error-message" style="display: none;"></p>
+    </div>
+    <img src="ftoanimada2.jpg" alt="Ari y Jessi" class="imagen-derecha">
+    <script src="script.js"></script>
+</body>
+</html>
