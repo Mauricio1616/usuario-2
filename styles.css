@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ad5e5e;
+    margin: 0;
+}
+.login-container {
+    background-color: #4a4455;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.username-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: white;
+    margin-bottom: 20px;
+}
+.username-container .label {
+    font-size: 15px;
+    padding-left: 10px;
+    position: absolute;
+    top: 13px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: #e8e8e8;
+}
+.username-input {
+    width: 250px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.username-input:focus {
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px rgb(0, 0, 0),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.username-container .username-input:valid ~ .label,
+.username-container .username-input:focus ~ .label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+    font-size: 13px;
+    color: #f8f9fa;
+}
+.username-container .username-input:valid,
+.username-container .username-input:focus {
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px rgba(0,0,0,1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.password-input {
+    border: 2px solid #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #212121;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #e8e8e8;
+    width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.password-input:focus {
+    outline-color: white;
+    background-color: #212121;
+    color: #e8e8e8;
+    box-shadow: 5px 5px #888888;
+}
+button {
+    background-color: #000000;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #666464;
+}
+#error-message {
+    color: #ff4d4d;
+    margin-top: 20px;
+}
+.login-container img {
+    width: 150px; /* Establece el ancho deseado en píxeles */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin-bottom: 20px; /* Espacio entre la imagen y el título */
+}
+.audio-player {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.imagen-izquierda {
+    float: left;
+    width: 150px; /* Ajusta el ancho deseado */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 5px; /* Espacio debajo de la imagen si el texto es más corto */
+}
+  .imagen-derecha {
+    float: right; /* Cambiamos a la derecha */
+    width: 150px; /* Ajusta el ancho deseado */
+    margin-left: 10px; /* Espacio entre la imagen y el texto a la izquierda */
+    margin-bottom: 5px; /* Espacio debajo de la imagen si el texto es más corto */
+}
+.hex-pattern {
+    --s: 6em; /* Tamaño del patrón */
+    --d: 0.3em; /* Diámetro de los puntos */
+    --bg: #232228; /* Color de fondo */
+    --fg: rgb(90, 92, 102); /* Color de los puntos */
+    
+    background-color: var(--bg);
+    background-image: radial-gradient(
+        var(--d) var(--d) at var(--d) var(--d),
+        var(--fg) 100%,
+        transparent 100%
+      ),
+      radial-gradient(
+        var(--d) var(--d) at var(--d) calc(var(--d) + 33.3%),
+        var(--fg) 100%,
+        transparent 100%
+      ),
+      radial-gradient(
+        var(--d) var(--d) at calc(var(--d) + 50%) calc(var(--d) + 50%),
+        var(--fg) 100%,
+        transparent 100%
+      ),
+      radial-gradient(
+        var(--d) var(--d) at calc(var(--d) + 50%) calc(var(--d) + 83.3%),
+        var(--fg) 100%,
+        transparent 100%
+      );
+    background-size: calc(var(--s) * 0.577350269) var(--s);
+  }
