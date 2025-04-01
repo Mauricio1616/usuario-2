@@ -2,23 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegurar que la página ocupe al menos toda la pantalla */
     background-color: #cf7777;
 }
 
 .container {
-    width: 90%; /* Asegura que no se pegue a los lados en pantallas pequeñas */
-    max-width: 800px; /* Evita que se haga muy ancho en pantallas grandes */
-    text-align: center; /* Centra el texto */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 90%; /* Evita que el contenido sea muy ancho */
+    max-width: 600px; /* Controla el tamaño máximo en pantallas grandes */
+    text-align: center;
+    background: white; /* Agrega un fondo para verificar el tamaño */
+    padding: 20px;
+    border-radius: 10px; /* Opcional: da bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra */
 }
 
 .gallery {
