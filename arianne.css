@@ -1,25 +1,32 @@
-ody {
+body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 50px;
+    margin: 0; /* Eliminar márgenes que pueden descentrar */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background-color: #9c4444;
+    background-color: #cf7777;
 }
 
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1px;
+    gap: 10px; /* Asegurar buen espaciado entre imágenes */
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Permitir que las imágenes bajen si no caben */
 }
 
 .gallery-img {
@@ -60,10 +67,13 @@ button:hover {
 audio {
     margin-top: 20px;
 }
+
+/* Efecto de cambio de color de fondo */
 body {
     transition: background-color 0.3s ease;
 }
 
+/* Estilos del interruptor de cambio */
 #switch {
     visibility: hidden;
     clip: rect(0 0 0 0);
@@ -75,7 +85,7 @@ body {
     display: block;
     width: 130px;
     height: 60px;
-    margin: 70px auto;
+    margin: 30px auto; /* Reducido para mejorar el centrado */
     position: relative;
     background: #ced8da;
     transition: all 0.2s ease-out;
