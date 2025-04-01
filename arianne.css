@@ -1,19 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;  /* Elimina el margen que puede estar desplazando el contenido */
+    margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     flex-direction: column;
     background-color: #cf7777;
 }
 
 .container {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-    max-width: 800px; /* Evita que se vea demasiado ancho en pantallas grandes */
-    text-align: center; /* Centra el contenido dentro del contenedor */
+    width: 90%; /* Asegura que no se pegue a los lados en pantallas pequeñas */
+    max-width: 800px; /* Evita que se haga muy ancho en pantallas grandes */
+    text-align: center; /* Centra el texto */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
     display: flex;
     flex-direction: column;
     align-items: center;
